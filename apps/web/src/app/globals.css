@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* Brand colours from the Kadé Brand Kit. The full token set (type scale, status colours) lands in S0-10. */
+:root {
+  --lagoon: #0e7c74;
+  --lagoon-deep: #0a5a54;
+  --lagoon-mist: #e3f4f1;
+  --kithul: #e8a23a;
+  --ink: #1b2430;
+  --slate: #5b6675;
+  --coconut: #fbf7f0;
+  --line: #e6e1d8;
+}
+
+@theme inline {
+  --color-lagoon: var(--lagoon);
+  --color-lagoon-deep: var(--lagoon-deep);
+  --color-lagoon-mist: var(--lagoon-mist);
+  --color-kithul: var(--kithul);
+  --color-ink: var(--ink);
+  --color-slate: var(--slate);
+  --color-coconut: var(--coconut);
+  --color-line: var(--line);
+  --font-sans:
+    var(--font-inter), var(--font-noto-sinhala), system-ui, sans-serif;
+  --font-sinhala: var(--font-noto-sinhala), sans-serif;
+}
+
+body {
+  background: var(--coconut);
+  color: var(--ink);
+}
